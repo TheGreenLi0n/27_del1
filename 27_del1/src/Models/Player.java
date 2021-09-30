@@ -4,7 +4,9 @@ public class Player {
     private int score;
     private boolean win;
     private int turn;
+
     // constructor for player object
+
     public Player(){
         score = 0;
         win = false;
