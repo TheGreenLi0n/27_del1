@@ -10,6 +10,8 @@ public class Cup {
     public Cup(GUI Gui)
     {
       gui = Gui;
+      die1 = new Die();
+      die2 = new Die();
     }
 
     public void setDie1(Die die1) {
