@@ -1,4 +1,6 @@
-import Models.Die;
+package Test;
+
+import Models.*;
 import java.util.*;
 
 public class Test {
@@ -16,8 +18,10 @@ public class Test {
             dice2.rolldice();
             int sum = dice1.getFacevalue()+dice2.getFacevalue();
 
+
             intarray[z]=sum;
             if (dice1.getFacevalue()==dice2.getFacevalue()){
+
                 doubles++;
                 switch (dice1.getFacevalue()){
                     case (1): doublearray[0]++;break;
@@ -27,6 +31,7 @@ public class Test {
                     case (5): doublearray[4]++;break;
                     case (6): doublearray[5]++;break;
                 }
+
             }
         }
         for (int i = 0; i < countarray.length; i++) {
@@ -50,3 +55,4 @@ public class Test {
 
     }
 }
+
