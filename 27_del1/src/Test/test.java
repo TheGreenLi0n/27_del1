@@ -1,4 +1,4 @@
-import Mypackage.Dice;
+import Models.Die;
 
 import java.util.*;
 
