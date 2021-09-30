@@ -10,8 +10,8 @@ public class Test {
         int[] doublearray = new int[6];
 
         for (int z = 0; z < 1000; z++) {
-            Dice dice1 = new Dice();
-            Dice dice2 = new Dice();
+            Die dice1 = new Die();
+            Die dice2 = new Die();
             dice1.rolldice();
             dice2.rolldice();
             int sum = dice1.getFacevalue()+dice2.getFacevalue();
