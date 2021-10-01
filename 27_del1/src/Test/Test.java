@@ -11,15 +11,17 @@ public class Test {
         int[] countarray = new int[11];
         int[] doublearray = new int[6];
 
+        // Main loop that puts all the sums into an array called intarray.
         for (int z = 0; z < 1000; z++) {
             Die dice1 = new Die();
             Die dice2 = new Die();
             dice1.rolldice();
             dice2.rolldice();
             int sum = dice1.getFacevalue()+dice2.getFacevalue();
-
-
             intarray[z]=sum;
+            
+            //This if-statement sees if the facevalues are equal, and if then count up all the occurrences of doubles
+            //and then puts them into an array, called doublearray.
             if (dice1.getFacevalue()==dice2.getFacevalue()){
 
                 doubles++;
@@ -34,14 +36,13 @@ public class Test {
 
             }
         }
+        //this nested for-loop, counts up how many of the different outcomes occurred.
         for (int i = 0; i < countarray.length; i++) {
             for (int e: intarray) {
                 if (e==i+2){
                     countarray[i]++;
                 }
-
             }
-
         }
 
         Arrays.sort(intarray);
