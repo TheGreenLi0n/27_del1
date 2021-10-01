@@ -12,10 +12,6 @@ public class Player {
         win = false;
         turn = 0;
     }
-    // Set score equal to x.
-    public void setScore(int x){
-        score = x;
-    }
     // for updating score
     public void updateScore(int x){
 
