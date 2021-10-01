@@ -8,6 +8,7 @@ public class Cup {
     private GUI gui;
     private int[] lastThrow;
 
+    //Constructor for Cup with GUI so it can update the graphics
     public Cup(GUI Gui)
     {
       gui = Gui;
@@ -32,6 +33,7 @@ public class Cup {
         return die2;
     }
 
+    //Rolls both the dice, and updates the GUI with the new Facevalues.
     public void rollCup()
     {
         die1.rolldice();
@@ -39,20 +41,24 @@ public class Cup {
         gui.setDice(die1.getFacevalue(), die2.getFacevalue());
     }
 
+    //checks if the dice got the same facevalue.
     public boolean getPair()
     {
         return die1.getFacevalue() == die2.getFacevalue();
     }
 
+    // gets the sum of the 2 dice
     public int getSum()
     {
        return die1.getFacevalue() + die2.getFacevalue();
     }
 
+    // saves the last roll 
     public void setLastThrow(int lastThrow1, int lastThrow2) {
         this.lastThrow = new int[] {lastThrow1, lastThrow2};
     }
 
+    //checks if there was rolled pair 6 twice in a row
     public boolean getGotLucky()
     {
         return (die1.getFacevalue() == 6 && die2.getFacevalue() == 6 && lastThrow[0] == 6 && lastThrow[1] == 6);
