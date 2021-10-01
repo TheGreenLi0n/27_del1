@@ -16,7 +16,7 @@ public class MainGameplayLoop {
         Cup cup = new Cup(gui);
 
         Scanner in = new Scanner(System.in);
-        System.out.println("To start the game type \"roll\"\nor if you want to close the game type \"exit\". ");
+        System.out.println("To start the game type \"roll\"\n To see the current palyers score type \"score\" \nor if you want to close the game type \"exit\". ");
         while (GameOngoing)
         {
             System.out.println("Current player" + (i % 2 + 1));
