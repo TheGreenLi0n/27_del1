@@ -5,13 +5,13 @@ public class Player {
     private boolean win;
     private boolean Turn;
 
-    // constructor for player object
+    // Constructor for player object
 
     public Player(){
         score = 0;
         win = false;
     }
-    // for updating score
+    // For updating score
     public void updateScore(int x){
 
         score += x;
@@ -20,11 +20,11 @@ public class Player {
     public void updateWin(){
         win = !win;
     }
-
+    // Returns scores value.
     public int getScore(){
         return score;
     }
-
+    // For setting score.
     public void setScore(int score) {
         this.score = score;
     }
