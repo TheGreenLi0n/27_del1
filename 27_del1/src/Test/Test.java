@@ -44,10 +44,8 @@ public class Test {
                 }
             }
         }
-
-        Arrays.sort(intarray);
         System.out.println("1000 throws");
-        //System.out.println("This is the array sorted: "+Arrays.toString(intarray)); // include this line to print the sorted array
+        //System.out.println("This is the array: "+Arrays.toString(intarray)); // include this line to print the intarray
         System.out.println("occurrences: two="+countarray[0]+" three="+countarray[1]+" four="+countarray[2]+" five="+countarray[3]+" six="+countarray[4]+" seven="+countarray[5]+" eight="+countarray[6]+" nine="+countarray[7]+" ten="+countarray[8]+" eleven="+countarray[9]+" twelve="+countarray[10]);
         System.out.println("\nAmount of doubles:"+doubles);
         System.out.println("occurrences of doubles: one="+doublearray[0]+" two="+doublearray[1]+" three="+doublearray[2]+" four="+doublearray[3]+" five="+doublearray[4]+" six="+doublearray[5]+"\n");
