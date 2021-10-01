@@ -81,6 +81,18 @@ public class MainGameplayLoop {
                 player2.updateWin();
                 GameOngoing = false;
             }
+
+            if (player1.getTurn() && cup.getGotLucky())
+            {
+                player1.updateWin();
+                GameOngoing = false;
+            }
+            else if (player2.getTurn() && cup.getGotLucky())
+            {
+                player2.updateWin();
+                GameOngoing = false;
+            }
+            cup.setLastThrow(cup.getDie1().getFacevalue(), cup.getDie2().getFacevalue());
             Totalrolls ++;
         }
         if (player1.isWin()) {
